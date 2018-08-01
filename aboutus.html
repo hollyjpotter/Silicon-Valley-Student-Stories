@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>About Us</title>
+              <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+  font-family: Arial;
+  padding: 20px;
+  background: url("silvalley.png");
+  style="width:100%;";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+      /* Header/Blog Title */
+      .header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+ /* background: transparent; */
+  box-shadow: 0 10px 20px rgba(0,0,0,.5);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+      .card {
+  padding: 20px;
+  margin-top: 20px;
+  /*   background: transparent; */
+  box-shadow: 0 10px 20px rgba(0,0,0,.5);
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  
+}
+      /* Clear floats after the columns */
+      .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+      /* Footer */
+      .footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
+}
+      /* Instagram */
+      .fa-instagram {
+    background: #efa5c8;
+    color: white;
+}
+      /* LinkedIn */
+      .fa-linkedin {
+    background: #efa5c8;
+    color: white;
+      }
+      ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ddd;
+}
+      li {
+    float: left;
+}
+      li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+      li a:hover:not(.active) {
+    background-color: #b4ffad;
+}
+      .active {
+    background-color: #73ba83;
+}
+    </style>
+  </head>
+  <body>
+    <div class="header">
+    <h2>About Us</h2>
+      </div>
+  
+      <ul>
+    <li><a class="active" href="mainpage.html">Home</a></li>
+    <li><a class="active" href="news.html">News</a></li>
+    <li><a class="active" href="forum.html">Forum</a></li>
+    <li style="float:right"><a class="active" href="aboutus.html">About Us</a></li>
+      </ul>
+      <div class="row">
+        <div class="card">
+          <h2>Annika Lund</h2>
+          <h5>Ideas and designs by Annika Lund</h5>
+            <p>Annika Lund is 17 and is currently attending Mountain View High School. In her future she plans to attend college, majoring in "I'm smart" major. She also enjoys lifegaurding while also playing other sports. </p>
+            <a href="https://www.instagram.com/annika.lund/?hl=en" class="fa fa-instagram"></a>
+            <a href="idk what her linkedin page is" class="fa fa-linkedin"></a>
+        </div>
+        <div class="card">
+          <h2>Holly Potter</h2>
+          <h5>Code by Holly Potter</h5>
+            <p>Holly Potter is 17 and is currently attending Mountain View High School. In her future she plans to attend college and major is a degree. She also enjoys other things because she doesn't play sports anymore. </p>
+            <a href="https://www.instagram.com/hollyjpotter/?hl=en" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/holly-potter-993a97166/" class="fa fa-linkedin"></a>
+        </div>
+      </div>
+      
+      <div class="footer"
+        <h2>The Bubble © 2018 All Rights Reserved</h2>
+      </div>
+        
+  </body>
+</html>
