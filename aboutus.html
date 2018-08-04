@@ -2,11 +2,16 @@
 
 <html>
   <head>
-    <title>About Us</title>
-              <!-- Add icon library -->
+    <!-- java and more for google feed API -->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!-- <link href="https://fontawesome.com/v4.7.0/icon/user-o" rel="stylesheet"> -->
+      <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
     <style>
+      
       body {
   font-family: Arial;
   padding: 20px;
@@ -16,8 +21,8 @@
   background-size: cover;
   background-attachment: fixed;
 }
-      /* Header/Blog Title */
-      .header {
+/* Header/Blog Title */
+.header {
   padding: 30px;
   font-size: 40px;
   text-align: center;
@@ -26,23 +31,44 @@
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
-      .card {
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn { 
+  float: left;
+  width: 75%;
+}
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+/* Add a card effect for articles */
+.card {
   padding: 20px;
   margin-top: 20px;
-  /*   background: transparent; */
+/*   background: transparent; */
   box-shadow: 0 10px 20px rgba(0,0,0,.5);
   opacity: 0.8;
   filter: alpha(opacity=80);
   
 }
-      /* Clear floats after the columns */
-      .row:after {
+/* Clear floats after the columns */
+.row:after {
   content: "";
   display: table;
   clear: both;
 }
-      /* Footer */
-      .footer {
+/* Footer */
+.footer {
   padding: 20px;
   text-align: center;
   background: #ddd;
@@ -50,61 +76,66 @@
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
-      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 800px) {
-      .leftcolumn, .rightcolumn { 
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn { 
     width: 100%;
     padding: 0;
   }
 }
-      /* Instagram */
-      .fa-instagram {
+     /* Instagram */
+.fa-instagram {
     background: #efa5c8;
     color: white;
 }
       /* LinkedIn */
-      .fa-linkedin {
-    background: #efa5c8;
-    color: white;
+.fa-linkedin {
+      background: #efa5c8;
+      color: white;
       }
-      ul {
+ ul {
     list-style-type: none;
     margin-top: 20px;
     padding: 0;
     overflow: hidden;
     background-color: #ddd;
-    opactity: 0.5;
-    filter: alpha(opacity=50);
 }
-      li {
+
+li {
     float: left;
 }
-      li a {
+
+li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-      li a:hover:not(.active) {
+
+li a:hover:not(.active) {
     background-color: #90d0db;
 }
-      .active {
+
+.active {
     background-color: #90d0db;
 }
     </style>
   </head>
   <body>
-    <div class="header">
-    <h2>About Us</h2>
+      <div class="header">
+    <h2>The Bubble</h2>
       </div>
   
       <ul>
     <li><a class="active" href="mainpage.html">Home</a></li>
     <li><a class="active" href="news.html">News</a></li>
     <li><a class="active" href="forum.html">Forum</a></li>
+    <li><a class="active" href="tipsandtricks.html">Tips & Tricks</a></li>
     <li style="float:right"><a class="active" href="aboutus.html">About Us</a></li>
       </ul>
+    
+    
       <div class="row">
         <div class="card">
           <h2>Annika Lund</h2>
